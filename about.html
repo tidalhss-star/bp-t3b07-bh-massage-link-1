@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <title>방화 마사지 링크 | 정보 — 방화동 1등 마사지샵</title>
+    <meta name="description" content="방화 마사지 링크의 모든 정보를 한눈에! 위치, 운영시간, 가격, 관리사 프로필까지. 방화동에서 가장 신뢰할 수 있는 마사지샵, 지금 확인하세요.">
+    <meta name="keywords" content="방화 마사지 링크 정보, 방화 마사지 위치, 방화동 마사지 가격, 방화 스웨디시 정보, 방화 마사지샵">
+    <link rel="canonical" href="https://t3b07-bh-massage-link-1.vercel.app/info">
+    <meta property="og:title" content="방화 마사지 링크 | 방화동 1등 마사지샵 정보">
+    <meta property="og:description" content="방화 마사지 링크에서 일상의 피로를 확실하게 풀어드립니다. 편안한 공간과 전문 관리사가 기다려요. 지금 바로 예약하세요!">
+    <meta property="og:url" content="https://t3b07-bh-massage-link-1.vercel.app/info">
+    <meta property="og:type" content="website">
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.1;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            margin-top: 3rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+            line-height: 1.3;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+        a {
+            color: #0071e3;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        a:hover {
+            opacity: 0.7;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            max-width: 980px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: #1d1d1f;
+        }
+        .logo span {
+            color: #86868b;
+            font-weight: 400;
+        }
+        nav {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+        nav a {
+            font-size: 0.95rem;
+            color: #1d1d1f;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+        }
+        nav a:hover {
+            color: #0071e3;
+        }
+        .tel-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background-color: #1d1d1f;
+            color: #fff !important;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .tel-link:hover {
+            background-color: #333;
+            color: #fff !important;
+            opacity: 1;
+        }
+
+        /* Hamburger menu (기본 숨김) */
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: #1d1d1f;
+            border-radius: 2px;
+            transition: 0.2s;
+        }
+
+        /* 반응형 768px */
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.5rem; margin-top: 2rem; }
+            .header-inner { padding: 10px 16px; }
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                flex-direction: column;
+                padding: 20px;
+                gap: 16px;
+                border-bottom: 1px solid rgba(0,0,0,0.08);
+                box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            }
+            nav.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .tel-link {
+                width: 100%;
+                justify-content: center;
+                padding: 12px 0;
+            }
+        }
+
+        /* Main content spacing */
+        main {
+            padding: 60px 0 80px;
+        }
+
+        /* Hero section (미니멀) */
+        .hero-mini {
+            text-align: center;
+            padding: 40px 0 20px;
+        }
+        .hero-mini p {
+            color: #86868b;
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Card grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin: 40px 0;
+        }
+        @media (max-width: 640px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 28px 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        .card .label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #86868b;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+        .card p {
+            color: #515154;
+            font-size: 0.95rem;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid #e8e8ed;
+            padding: 20px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .faq-answer {
+            color: #515154;
+            font-size: 0.98rem;
+            padding-right: 20px;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #e8e8ed;
+            padding: 40px 0;
+            text-align: center;
+            color: #86868b;
+            font-size: 0.9rem;
+        }
+
+        /* Utility */
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 2rem; }
+        .mb-2 { margin-bottom: 2rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">방화 마사지 <span>링크</span></div>
+        <div class="hamburger-menu" onclick="document.querySelector('nav').classList.toggle('active')">
+            <span></span><span></span><span></span>
+        </div>
+        <nav>
+            <a href="/">홈</a>
+            <a href="/info">정보</a>
+            <a href="/price">가격</a>
+            <a href="/review">후기</a>
+            <a href="/contact" class="tel-link">📞 02-1234-5678</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="hero-mini">
+            <h1>방화 마사지 링크,<br>여기 다 있어</h1>
+            <p>위치, 시간, 가격, 관리사 — 궁금한 거 전부 다 알려줄게. 형아들이 직접 경험하고 만든 정보니까 믿어도 돼.</p>
+        </div>
+
+        <!-- 핵심 정보 카드 -->
+        <div class="card-grid">
+            <div class="card">
+                <div class="label">📍 위치</div>
+                <h3>방화동 중앙로 42길 17, 2층</h3>
+                <p>방화역 1번 출구에서 걸어서 3분. 골목 입구에 편의점 있어서 찾기 쉬워. 건물 앞에 주차 2대 가능하니까 차 가져와도 돼.</p>
+            </div>
+            <div class="card">
+                <div class="label">🕐 운영시간</div>
+                <h3>매일 10:00 ~ 22:00</h3>
+                <p>연중무휴. 근데 가끔 형이 늦잠 자면 10시 10분쯤 문 열 때도 있긴 한데… 그래도 전화하면 바로 깨워줌 ㅋㅋ</p>
+            </div>
+            <div class="card">
+                <div class="label">💰 가격 요약</div>
+                <h3>스웨디시 60분 7만원</h3>
+                <p>타이마사지 60분 6만, 지압 60분 5만5천. 첫 방문이면 5천원 깎아주고, 단골 되면 가끔 서비스도 줌. 자세한 건 <a href="/price">가격 페이지</a> 참고.</p>
+            </div>
+            <div class="card">
+                <div class="label">👨‍💼 관리사</div>
+                <h3>경력 10년+ 형아들만</h3>
+                <p>다들 자격증 있고, 손맛으로 승부 보는 사람들. 말 잘 통하고, 아픈 데 찔러주면 "아 거기요?" 하면서 바로 집중 공략해줌. 완전 프로.</p>
+            </div>
+        </div>
+
+        <!-- 상세 설명 섹션 -->
+        <h2>여기가 왜 방화동 1등인지 알려줄게</h2>
+        <p>형, 나도 원래 마사지 잘 안 믿었어. '그냥 주물럭거리는 거 아냐?' 했는데, 여기 오고 생각이 확 바꼈어. 방화 마사지 링크는 그냥 마사지샵이 아니라, 진짜 피로를 풀어주는 곳이야.</p>
+        <p>들어가면 은은한 조명에 잔잔한 음악, 그리고 딱 좋은 온도. 소파에 앉자마자 "어, 여기 괜찮네" 싶어. 관리사 형들이 오면 먼저 어디가 안 좋은지 물어봐. 나는 항상 "어깨랑 허리가…" 하면 "아, 컴퓨터 많이 하시나 보네" 하면서 딱 집어줘. 완전 신기.</p>
+        <p>특히 스웨디시 추천해. 오일 쓰는데 미끌미끌하지 않고 적당히 흡수되면서 근육이 풀리는 느낌이야. 타이마사지는 좀 더 시원하게 풀어주고, 지압은 꾹꾹 눌러주는 맛이 있어. 취향 따라 고르면 돼.</p>
+        <p>그리고 결정타는 마사지 끝나고 주는 차랑 간식. 녹차나 둥굴레차 마시면서 "아, 살 것 같다" 이러고 나오게 돼. 진짜임.</p>
+
+        <!-- 자주 묻는 질문 (FAQ) -->
+        <h2>자주 묻는 질문 — 형들이 궁금해하는 거</h2>
+        <div class="faq-item">
+            <div class="faq-question">예약 꼭 해야 돼? <span style="font-size:0.8rem; color:#86868b;">▼</span></div>
+            <div class="faq-answer">워크인도 받긴 하는데, 형, 가급적이면 전화나 카톡으로 예약하고 와. 특히 주말엔 자리가 금방 차거든. "아, 오늘 갈게~" 하면 기다릴 수도 있어. 전화번호는 위에 있으니까 편하게 연락해.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">첫 방문인데 뭐 골라야 돼? <span style="font-size:0.8rem; color:#86868b;">▼</span></div>
+            <div class="faq-answer">처음이면 스웨디시 60분 강추! 부담 없고, 전신이 부드럽게 풀려. 타이는 좀 더 액티브한 느낌이라 첫술에 배부를 수 있어. 근데 자신 있으면 타이도 괜찮아. 형이 하고 싶은 걸로 골라.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">남자만 갈 수 있어? <span style="font-size:0.8rem; color:#86868b;">▼</span></div>
+            <div class="faq-answer">아니! 여성 손님도 많이 와. 관리사 중에 여성분도 계시고, 커플로 오는 사람들도 있어. 남녀노소 다 환영이야. 근데 예약할 때 성별이랑 원하는 관리사 있으면 말해주면 더 편하게 받을 수 있어.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">주차 돼? <span style="font-size:0.8rem; color:#86868b;">▼</span></div>
+            <div class="faq-answer">건물 앞에 2대 가능. 근데 자리가 협소해서 SUV는 좀 빡셀 수 있어. 만약 자리 없으면 근처 공영주차장 이용하면 돼. 도보 2분 거리니까 크게 불편하진 않을 거야.</div>
+        </div>
+
+        <p class="text-center mt-2" style="color:#86868b;">더 궁금한 게 있으면 전화나 문자로 물어봐. 형이 친절하게 알려줄게.</p>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>방화 마사지 링크 | 서울 강서구 방화동 중앙로 42길 17 2층 | 02-1234-5678</p>
+        <p style="margin-top: 8px;">© 2025 방화 마사지 링크. All rights reserved. 형, 오늘 하루도 수고했어.</p>
+    </div>
+</footer>
+
+<script>
+    // 간단한 모바일 메뉴 토글
+</body>
+</html>
